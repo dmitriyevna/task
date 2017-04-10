@@ -1,0 +1,89 @@
+@import variables
+
+header
+	position: relative
+	width: 100%
+	.headerTitle
+		position: absolute
+		width: 100%
+		z-index: 1000
+		color: $light_font_color
+		line-height: 90px
+		text-transform: uppercase
+		h1
+			padding-top: 210px
+
+#headerSlider
+	position: relative
+	width: 100%
+	height: 700px
+	overflow: hidden
+	.headerSlider__slide
+		width: 100%
+		height: 100%
+		background-size: auto
+		background-position: top center
+		background-repeat: no-repeat
+		display: none
+		&:first-of-type
+			display: block
+	.headerSlider__control
+		position: absolute
+		width: 100%
+		bottom: 65px
+		.control_button
+			background-color: #ffffff
+			opacity: 0.4
+			padding: 3px 24px
+			border-radius: 2px
+			font-size: 65px
+			color: #000000
+			cursor: pointer
+			&:hover
+				opacity: 1	
+.moreInformBanner
+	background-color: $primary-color
+	width: 100%
+	padding: 62px 0
+	font-family: Lato-Bold
+	text-transform: uppercase
+	line-height: 38px
+	font-size: 38px
+	color: $light_font_color
+	overflow: hidden
+	h3
+		max-width: 760px
+		float: left
+	a.btn
+		position: relative
+		display: block
+		float: right	
+		color: $light_font_color
+		font-family: Lato-Regular
+		font-size: 28px
+		border: 1px solid $light_font_color
+		padding: 22px 45px
+		&:before,
+		&:after
+			position: absolute
+			top: 0
+			left: 0
+			width: 0%
+			height: 100%
+			background-color: $light_font_color
+			opacity: 0.4
+			content: ' '
+		&:after
+			left: auto
+			right: 0
+		&:hover:before
+			width: 100%
+			transition: width 0.6s
+		&:hover:after
+			width: 100%
+			margin-left: -100%
+			transition: all 0.6s	
+					
+
+
+

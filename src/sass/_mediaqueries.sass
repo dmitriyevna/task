@@ -1,0 +1,56 @@
+$small: 320px
+$medium: 768px
+$large: 1280px
+
+@media screen and (min-width: $small) and (max-width: $medium)
+	.navbar
+		.logo
+			.logo__txt
+				font-size: 42px
+	header
+		.headerTitle
+			h1
+				font-size: 50px
+				line-height: 60px
+
+	.whatYouCanExpect
+		.materials
+			grid-template-columns: 1fr
+			grid-column: 1
+			grid-row: 4
+			.materials_block
+				justify-self: center			
+	
+
+@media screen and (min-width: $medium) and (max-width: $large)
+
+	.whatYouCanExpect
+		.materials
+			grid-template-columns: 1fr 1fr
+			grid-column: 2
+			grid-row: 2
+			align-content: safe center;
+			.materials_block
+				justify-self: center
+
+@media screen and (max-width: $large)
+	.navbar
+		nav
+			float: none
+			padding-top: 140px
+			text-align: center
+			li
+				display: block
+				.dropdown__content
+					    width: 100%;
+    					margin-left: -96px;
+
+	header
+		.moreInformBanner
+			padding: 20px
+			a.btn,
+			h3
+				float: none
+			a.btn
+				margin-top: 15px
+				text-align: center	

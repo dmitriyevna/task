@@ -1,0 +1,61 @@
+.whatYouCanExpect
+	background-image: url('../img/what_you_can_expect__background.png')
+	font-family: OpenSansLight
+	.container
+		padding: 125px 10px
+		h2
+			text-transform: uppercase
+			color: $dark_blue_header_color
+			line-height: 67px
+			span
+				font-family: OpenSansBold
+		& > p
+			font-size: 22px
+			max-width: 988px
+			color: $text_color
+			margin: 50px 0
+	.materials
+		display: grid
+		grid-row: 1
+		grid-column: 4
+		grid-template-columns: 270px 270px 270px 270px
+		grid-gap: 30px
+		.materials_block
+			width: 270px
+			.materials_block__image
+				height: 270px
+				&.image--volupt
+					background-image: url('../img/prev1_volupt.png')
+				&.image--santium
+					background-image: url('../img/prev2_santium.png')
+				&.image--laudanti
+					background-image: url('../img/prev3_laudanti.png')
+				&.image--aperiam
+					background-image: url('../img/prev4_aperiam.png')
+			h4
+				font-family: OpenSansExtraBold
+				font-size: 30px
+				color: $blue_title_color
+				margin-top: 50px
+			span
+				font-family: OpenSansBold
+				font-size: 18px
+				margin: 5px 0
+			p
+				font-family: OpenSansLight
+				font-size: 14px
+				margin: 0
+				line-height: 21px
+			.btn.materials_block__read_more
+				font-family: OpenSansRegular
+				font-size: 14px
+				padding: 10px 30px
+				margin-top: 30px
+				background-color: $primary_color
+				text-transform: uppercase
+				color: $light_font_color
+
+				&:hover
+					background-color: darken($primary_color, 16%);
+					transition: background-color 0.8s		
+

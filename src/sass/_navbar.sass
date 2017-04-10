@@ -1,0 +1,72 @@
+@import variables
+
+.navbar
+	background-color: $navbar_background
+	text-transform: uppercase
+	.logo
+		float: left
+		&__img,
+		&__txt
+			display: block
+			float: left
+		&__txt	
+			position: relative
+			top: 48px
+			font-family: Lato-Black
+			color: $primary_color
+			font-size: 57px
+			margin-left: 12px	
+			span
+				position: absolute
+				display: block
+				top: -32px
+				right: 0
+				font-size: 18px
+		&__img
+			width: 110px
+			height: 110px
+			background-color: $primary_color
+			padding: 20px 30px
+			span
+				display: block
+				font-size: 83px
+				color: $navbar_background
+	nav
+		position: relative
+		float: right
+		padding: 45px 96px 20px	
+		font-family: Lato-Regular
+		font-size: 24px	
+		li
+			list-style-type: none
+			display: inline-block
+			.dropdown__content
+			    position: absolute
+			    padding-top: 22px
+			    font-size: 16px
+			    text-transform: none
+			    display: none
+			    z-index: 2000
+			    background-color: $navbar_background
+			    & > a
+			    	display: block	
+			    	margin: 0px
+			    	padding: 10px 35px
+			    	& > span
+			    		font-size: 25px
+			    		margin-left: 8px
+			    	&:hover
+			    		background-color: $dropdown_hover_background
+			    	&:hover > span
+			    		display: inline-block
+			    			
+		.nav__dropdown:hover .dropdown__content
+			display: block   	
+		a
+			text-decoration: none
+			color: $menu_link_color
+			margin-left: 35px
+			cursor: pointer
+			&:hover,
+			&.active
+				color: $light_font_color		
